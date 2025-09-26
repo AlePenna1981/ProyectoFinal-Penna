@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItmDeatailContainer/ItemDetailContainer";
 import Cart from "./components/Cart/Crat";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 const App = () => {
   //
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/type/:type" element={<ItemListContainer />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
