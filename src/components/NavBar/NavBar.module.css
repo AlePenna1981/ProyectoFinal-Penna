@@ -15,3 +15,11 @@
   width: 40%;
   list-style: none;
 }
+.btnNavegacion a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+.btnNavegacion a:hover {
+  transform: scale(1.2);
+}
