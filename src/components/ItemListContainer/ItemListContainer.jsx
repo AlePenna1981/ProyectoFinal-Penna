@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProducts } from "../../asyncMock";
+import { getProducts, getProductsByCategory } from "../../data/firebase";
 import styles from "./ItemListContainer.module.css";
 import ItemList from "../ItemList/ItemList";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
@@ -13,14 +13,11 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getProducts()
-      .then((resp) => {
-        if (type) {
-          setProductos(resp.filter((prod) => prod.type === type));
-        } else {
-          setProductos(resp);
-        }
-      })
+
+    const asyncFunc = type ? getProductsByCategory : getProducts;
+
+    asyncFunc(type)
+      .then((resp) => setProductos(resp))
       .finally(() => setIsLoading(false));
   }, [type]);
 

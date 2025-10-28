@@ -1,4 +1,3 @@
-// ItemCount.jsx
 import { useState } from "react";
 
 const ItemCount = ({ stock, initial = 1, onAdd }) => {

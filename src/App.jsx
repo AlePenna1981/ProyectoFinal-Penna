@@ -4,13 +4,17 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./components/ItmDeatailContainer/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
+import app from "./data/firebase";
 
 const App = () => {
   //
+  console.log("Init firebase", app);
+  // getProducts();
   return (
     <BrowserRouter>
       <div className="container">
         <NavBar />
+
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/type/:type" element={<ItemListContainer />} />

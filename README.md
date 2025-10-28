@@ -1,36 +1,25 @@
-Entrega 2: Navega las rutas
-Implementa una herramienta de routing, la cual permitirá navegar a través de las diferentes vistas para tu tienda: catálogo principal de productos, catálogo de productos filtrados por categorías, y vista en detalle de un producto. Crea la funcionalidad necesaria para que los usuarios puedan:
+🛒 E-commerce con React y Firebase, Proyecto final de CoderHouse
 
-Seleccionar desde el menú las distintas categorías disponibles.
+Este proyecto es una aplicación de e-commerce desarrollada con React, que utiliza Firebase Firestore como base de datos para almacenar los productos y las órdenes de compra.
 
-Visualizar el listado, filtrando según esa elección.
+🚀 Tecnologías utilizadas
 
-Seleccionar un producto del listado y acceder a una vista en detalle del mismo, donde además contarán con una interfaz que posteriormente les permita agregar unidades al carrito.
+React: para la construcción de la interfaz y el manejo de componentes.
 
-Objetivos
-Implementar la funcionalidad de navegación entre las diferentes vistas utilizando enlaces y rutas.
+React Router: para la navegación entre las diferentes páginas del sitio.
 
-Desarrollar la navegabilidad básica de la aplicación, permitiendo navegar desde el catálogo al detalle de cada item.
+Firebase Firestore: como base de datos en la nube para gestionar productos y pedidos.
 
-Requisitos
-Implementación de React Router y creación de las distintas rutas necesarias para mostrar las vistas de nuestra app.
+Bootstrap: para el diseño y la maquetación responsive.
 
-División entre componentes contenedores encargados de manejar el estado y los efectos (ItemListContainer, ItemDetailContainer) y componentes de presentación, encargados del apartado visual (estructura de elementos, estilos, classNames, etc.)
+React Icons: para agregar íconos visuales en la interfaz.
 
-Los componentes contenedores harán un llamado asíncrono a "Promises" que resuelvan luego de un breve retardo los datos solicitados (listado de productos, un producto)
+💡 Funcionalidades principales
 
-Uso del método Array.map() y la prop "key" para listar todos los productos en el catálogo.
+Listado y filtrado de productos desde Firestore.
 
-Uso del hook useParams() de react router para leer el segmento actual de la URL y mostrar el contenido correspondiente.
+Agregar, eliminar y vaciar productos del carrito.
 
-Recomendaciones
-No olvides utilizar los parámetros URL en el array de dependencias de tu useEffect para generar las actualizaciones necesarias al navegar.
+Cálculo automático del total de la compra.
 
-No crees diferentes rutas para cada categoría: puede parecer la solución más simple cuando tu aplicación sea pequeña, pero hará más difícil incorporar nuevas categorías y modificar la implementación en el futuro, ya que tendrás tu código duplicado en diversos componentes.
-
-Crear una ruta de tipo “404” (path=”\*”) es una buena práctica y te ayudará a encontrar errores de navegación y enlaces mal formateados.
-
-Puedes incluir el componente contador ItemCount dentro del componente ItemDetail
-
-Formato
-Link a último commit de git. Debe tener el nombre “NavegaLasRutas+Apellido”, por ejemplo “NavegaLasRutas+Fernandez” Opcional: Entrega un GIF mostrando la navegabilidad.
+Formulario de checkout que guarda la orden en Firebase.
