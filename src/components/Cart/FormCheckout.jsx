@@ -33,8 +33,15 @@ const FormCheckout = ({ handleChekout }) => {
   };
 
   return (
-    <div style={{ backgroundColor: "lightblue", padding: 10, borderRadius: 5 }}>
-      <h4>Completa tus datos</h4>
+    <div
+      style={{
+        backgroundColor: "lightblue",
+        padding: 15,
+        borderRadius: 5,
+        marginBottom: 20,
+      }}
+    >
+      <h4>Completa tus datos para efectuar tu compra</h4>
       <form onSubmit={handleSubmit} style={{ padding: 10 }}>
         <label>
           Nombre
@@ -61,7 +68,7 @@ const FormCheckout = ({ handleChekout }) => {
           />
         </label>
         <button type="submit" className="btn btn-info m-2">
-          Enviar
+          Comprar
         </button>
       </form>
     </div>

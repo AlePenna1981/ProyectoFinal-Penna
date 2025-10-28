@@ -7,8 +7,8 @@ export const CartWidget = () => {
 
   return (
     <div>
-      <FaShoppingCart size={50} style={{ color: "black" }} />
-      <strong style={{ color: "black" }}>{totalItems}</strong>
+      <FaShoppingCart size={50} style={{ color: "white" }} />
+      <strong style={{ color: "white", margin: 5 }}>{totalItems}</strong>
     </div>
   );
 };

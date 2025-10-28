@@ -1,9 +1,15 @@
 .cajaNavBar {
-  padding: 10px;
+  padding: 40px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: aquamarine;
+  background-color: rgb(24, 24, 24);
+  margin: -12px;
+}
+.titulo {
+  color: antiquewhite;
+  font-weight: 650;
+  font-size: 400%;
 }
 .logo {
   height: 90px;
@@ -17,8 +23,10 @@
 }
 .btnNavegacion a {
   text-decoration: none;
-  color: black;
+  color: rgb(243, 243, 243);
   transition: all 0.5s;
+  font-weight: 450;
+  font-size: larger;
 }
 .btnNavegacion a:hover {
   transform: scale(1.2);

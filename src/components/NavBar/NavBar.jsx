@@ -1,12 +1,13 @@
 import styles from "./NavBar.module.css";
-import logo from "../../img/bassLogo.jpg";
+// import logo from "../../img/bassLogo.jpg";
 import { CartWidget } from "../CarWidget/CartWidget";
 import { NavLink } from "react-router";
 const NavBar = () => {
   //
   return (
     <div className={styles.cajaNavBar}>
-      <img className={styles.logo} src={logo} alt="" />
+      {/* <img className={styles.logo} src={logo} alt="" /> */}
+      <h2 className={styles.titulo}>The Bass Shop</h2>
       <ul className={styles.btnNavegacion}>
         <NavLink to="/">
           <li className={styles.links}>inicio</li>

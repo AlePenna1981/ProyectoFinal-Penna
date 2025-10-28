@@ -14,7 +14,7 @@ const App = () => {
     <BrowserRouter>
       <div className="container">
         <NavBar />
-
+        <h1>Bassinga</h1>
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/type/:type" element={<ItemListContainer />} />
