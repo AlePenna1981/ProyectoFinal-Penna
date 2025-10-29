@@ -11,6 +11,6 @@
 .container h1 {
   color: aliceblue;
   text-align: center;
-  font-size: 150px;
-  margin-bottom: 50px;
+  font-size: 10vw;
+  margin: 30px;
 }

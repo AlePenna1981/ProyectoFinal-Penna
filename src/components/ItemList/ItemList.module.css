@@ -4,3 +4,8 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (max-width: 992px) {
+  .itemsContainer {
+    flex-direction: column;
+  }
+}

@@ -23,3 +23,26 @@
   border-radius: 5px;
   /* color: antiquewhite; */
 }
+
+@media (max-width: 992px) {
+  .cajaItemCart {
+    background-color: rgb(253, 247, 239);
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .cajaItemCart img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .cajaItemCart {
+    background-color: rgb(253, 247, 239);
+    padding: 30px;
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+}

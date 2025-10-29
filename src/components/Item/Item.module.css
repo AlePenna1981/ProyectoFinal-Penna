@@ -17,3 +17,17 @@
   height: 80px;
   margin: 5px;
 }
+
+@media (max-width: 992px) {
+  .productContainer {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 515px) {
+  .productContainer img {
+    height: 48px;
+  }
+}
