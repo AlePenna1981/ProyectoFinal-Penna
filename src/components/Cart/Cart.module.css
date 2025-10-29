@@ -1,5 +1,5 @@
 .cajaItemCart {
-  background-color: rgb(253, 247, 239);
+  background-color: rgb(255, 255, 255);
   padding: 30px;
   width: 50%;
   border-radius: 5px;
@@ -24,11 +24,7 @@
 
 @media (max-width: 992px) {
   .cajaItemCart {
-    background-color: rgb(253, 247, 239);
-    padding: 30px;
     width: 100%;
-    border-radius: 5px;
-    margin-top: 10px;
   }
   .cajaItemCart img {
     width: 100%;
@@ -37,10 +33,6 @@
 
 @media (max-width: 630px) {
   .cajaItemCart {
-    background-color: rgb(253, 247, 239);
-    padding: 30px;
     width: 80%;
-    border-radius: 5px;
-    margin-top: 10px;
   }
 }
