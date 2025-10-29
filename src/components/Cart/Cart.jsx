@@ -26,7 +26,9 @@ const Crat = () => {
   return (
     <div className={styles.cajaCart}>
       {cart.length === 0 ? (
-        <h3>Tu carrito esta vacio</h3>
+        <div className={styles.cartelVacio}>
+          <h3>Tu carrito esta vacio</h3>
+        </div>
       ) : (
         <>
           {cart.map((p) => (
