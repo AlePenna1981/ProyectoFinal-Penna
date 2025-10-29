@@ -27,13 +27,10 @@ export default app;
 export async function getProducts() {
     const productsRef = collection(db, 'products')
     const productsSnapshot = await getDocs(productsRef)
-    // const document0 = productsSnapshot.docs[0];
-    // console.log(document0.data(), `id: ${document0.id} `)
 
     const documents = productsSnapshot.docs;
 
     const dataDocs = documents.map((item) => {
-        // console.log(item.data(), item.id)
         return { id: item.id, ...item.data() }
     })
 

@@ -4,9 +4,9 @@
 
   background-image: url("./img/bajos6.jpg");
   background-repeat: no-repeat;
-  background-position: center center; /* centra horizontal y verticalmente */
-  background-size: cover; /* hace que ocupe todo el fondo */
-  background-attachment: fixed; /* opcional: hace que no se mueva al hacer scroll */
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .container h1 {
   color: aliceblue;

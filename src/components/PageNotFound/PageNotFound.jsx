@@ -7,7 +7,7 @@ const PageNotFound = () => {
         <h1 className="text-4xl font-bold">Error 404</h1>
 
         <p className="text-lg mt-2">
-          Oops... Parece que estás perdido en el espacio 🚀
+          Oops... Parece que estás perdido en el espacio amiguero 🚀
         </p>
       </div>
     </div>

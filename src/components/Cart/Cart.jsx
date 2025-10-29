@@ -8,8 +8,6 @@ const Crat = () => {
   const { cart, removeItem, clearCart, total } = useContext(CartContex);
 
   async function handleChekout(formData) {
-    console.log(`FormData:`, formData);
-
     const orderData = {
       buyer: formData,
       item: cart,
@@ -22,7 +20,6 @@ const Crat = () => {
     clearCart();
   }
 
-  console.log(cart);
   return (
     <div className={styles.cajaCart}>
       {cart.length === 0 ? (

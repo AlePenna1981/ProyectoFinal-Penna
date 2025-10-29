@@ -9,7 +9,6 @@ import app from "./data/firebase";
 const App = () => {
   //
   console.log("Init firebase", app);
-  // getProducts();
   return (
     <BrowserRouter>
       <div className="container">

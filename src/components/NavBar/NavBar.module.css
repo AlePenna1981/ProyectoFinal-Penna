@@ -11,10 +11,7 @@
   font-weight: 650;
   font-size: 300%;
 }
-.logo {
-  height: 90px;
-  border-radius: 90px;
-}
+
 .btnNavegacion {
   display: flex;
   justify-content: space-evenly;
@@ -40,11 +37,11 @@
   }
 
   .btnNavegacion a {
-    font-size: 120%; /* Aumenta un poco el tamaño si querés */
+    font-size: 120%;
   }
 
   .cajaNavBar {
-    flex-direction: column; /* Si querés que toda la navbar se apile */
+    flex-direction: column;
     gap: 20px;
   }
 }

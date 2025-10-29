@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const CartContex = createContext(null);
 
 export const CartContexProvider = ({ children }) => {
@@ -19,7 +20,6 @@ export const CartContexProvider = ({ children }) => {
     } else {
       const newItem = { ...item, quantity, subTotal: item.price * quantity };
       setCart([...cart, newItem]);
-      console.log(cart);
     }
   };
 
@@ -43,6 +43,7 @@ export const CartContexProvider = ({ children }) => {
 
   useEffect(() => {
     handleTotalItems();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cart]);
 
   const objetValues = {
